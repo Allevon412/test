@@ -301,4 +301,3 @@ function Invoke-DullPit{
 	$Assembly.GetType("Costura.AssemblyLoader", $false).GetMethod("Attach", $BindingFlags).Invoke($Null, @())
 	$Assembly.GetType("DullPit3.DullPit").GetMethod("InvokeDullPit").Invoke($Null, @(,$passed))
 }
-Invoke-DullPit -CollectionMethod all,loggedon
